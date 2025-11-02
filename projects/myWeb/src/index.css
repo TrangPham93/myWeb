@@ -1,0 +1,22 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  /* Default behavior (content-box): width = content only
+  With border-box: width = content + padding + border */
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #dac7c7;
+  color: #221b1b;
+}
+
+/* Optional dark mode class */
+body.dark {
+  background-color: #111125;
+  color: #584e4e;
+}
+
