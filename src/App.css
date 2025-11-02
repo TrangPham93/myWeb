@@ -17,14 +17,17 @@ body, html {
 
 /* Sidebar */
 .sidebar {
+  padding: 30px;
   width: 200px;
   background-color: #8b4f1e;
   color: #d3baa6;
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  padding: 30px;
+  justify-content: space-between;
+  height: 100vh;
 }
+
 
 .logo {
   font-size: 1.4em;
@@ -44,6 +47,19 @@ body, html {
   cursor: pointer;
   border-radius: 10px;
   transition: 0.3s;
+  margin-bottom: 10px;
+}
+
+.dark-mode-btn {
+  margin-top: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.3s;
+  color: #a29898;
 }
 
 .menu button:hover {
@@ -54,6 +70,7 @@ body, html {
   background-color: #c59348;
   color: #d9cdba;
 }
+
 
 /* Content area */
 .content {
@@ -110,4 +127,14 @@ body.dark .menu button.active {
 
 body.dark .menu button:hover {
   background-color: #1f2a6d;
+}
+
+/* download CV button */
+.download-cv-btn {
+  border: none;
+  background: none;
+  color: #b05002;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: auto;
 }

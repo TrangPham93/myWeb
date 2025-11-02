@@ -1,7 +1,10 @@
-export default function Sidebar({ activePage, onChangePage }) {
-  const toggleDarkMode = () => {
-    document.body.classList.toggle("dark");
-  };
+import { FaSun, FaMoon } from "react-icons/fa";
+
+
+export default function Sidebar({ activePage, onChangePage, darkMode, onToggleDarkMode }) {
+  // const toggleDarkMode = () => {
+  //   document.body.classList.toggle("dark");
+  // };
 
   return (
     <aside className="sidebar">
@@ -31,10 +34,12 @@ export default function Sidebar({ activePage, onChangePage }) {
         >
           Contact
         </button>
-
-        {/* Dark mode toggle */}
-        <button onClick={toggleDarkMode}>Toggle Dark Mode</button>
       </nav>
+
+      {/* Dark mode toggle */}
+      <button className="dark-mode-btn" onClick={onToggleDarkMode}>
+        {darkMode ? <FaSun size={20}/> : <FaMoon size={20}/>}
+      </button>
     </aside>
   );
 }
